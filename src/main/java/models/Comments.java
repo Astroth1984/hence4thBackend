@@ -2,7 +2,7 @@ package models;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+@Document(collection = "comments")
 public class Comments {
 	//@Id
 	private String id;
