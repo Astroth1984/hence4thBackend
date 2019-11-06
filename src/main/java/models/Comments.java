@@ -2,17 +2,19 @@ package models;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.github.pemistahl.lingua.api.Language;
+
 @Document(collection = "comments")
 public class Comments {
 	//@Id
 	private String id;
     private String comment;
-    private String lang;
+    private Language lang;
     private int[] vect;
     
 	public Comments() {
 	}
-	public Comments(String comment, String lang, int[] vect) {
+	public Comments(String comment, Language lang, int[] vect) {
 		this.comment = comment;
 		this.lang = lang;
 		this.vect=vect;
@@ -29,10 +31,10 @@ public class Comments {
 	public void setComment(String comment) {
 		this.comment = comment;
 	}
-	public String getLang() {
+	public Language getLang() {
 		return lang;
 	}
-	public void setLang(String lang) {
+	public void setLang(Language lang) {
 		this.lang = lang;
 	}
 	public int[] getVect() {
@@ -41,6 +43,7 @@ public class Comments {
 	public void setVect(int[] vect) {
 		this.vect=vect;
 	}
+	
 
 }
 
