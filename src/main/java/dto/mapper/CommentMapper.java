@@ -9,14 +9,10 @@ public class CommentMapper {
 		
 		return new CommentDto()
                 .setId(comments.getId())
-                .set(trip.getAgency().getCode())
-                .setSourceStopCode(trip.getSourceStop().getCode())
-                .setSourceStopName(trip.getSourceStop().getName())
-                .setDestinationStopCode(trip.getDestStop().getCode())
-                .setDestinationStopName(trip.getDestStop().getName())
-                .setBusCode(trip.getBus().getCode())
-                .setJourneyTime(trip.getJourneyTime())
-                .setFare(trip.getFare());
+                .setComment(comments.getComment())
+                .setLang(comments.getLang())
+                .setVect(comments.getVect());
+               
 		
 	}
 
