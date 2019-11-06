@@ -6,8 +6,10 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.Accessors;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.github.pemistahl.lingua.api.Language;
 
 @Getter
 @Setter
@@ -19,16 +21,24 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 public class CommentDto {
 	
-	private String id;
+	public String id;
 	
 	
-    private String comment;
+    public String comment;
     
     
-    private String lang;
+    public Language lang;
     
     
-    private int[] vect;
+    public int[] vect;
+
+
+	public String getId() {
+		 return id;
+	}
+
+
+	
 
 
 }
