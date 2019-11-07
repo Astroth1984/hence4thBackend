@@ -1,6 +1,7 @@
 package service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import dto.mapper.CommentMapper;
 import dto.model.CommentDto;
@@ -16,6 +17,8 @@ import com.github.pemistahl.lingua.api.LanguageDetector;
 import com.github.pemistahl.lingua.api.Language;
 
 
+
+@Component
 public class LanguageDetectionImp implements LanguageDetectionService {
 	
 	@Autowired
