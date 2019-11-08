@@ -10,11 +10,11 @@ public class Comments {
 	private String id;
     private String comment;
     private Language lang;
-    private int[] vect;
+    private double vect;
     
 	public Comments() {
 	}
-	public Comments(String comment, Language lang, int[] vect) {
+	public Comments(String comment, Language lang, double vect) {
 		this.comment = comment;
 		this.lang = lang;
 		this.vect=vect;
@@ -37,10 +37,10 @@ public class Comments {
 	public void setLang(Language lang) {
 		this.lang = lang;
 	}
-	public int[] getVect() {
+	public double getVect() {
 		return vect;
 	}
-	public void setVect(int[] vect) {
+	public void setVect(double vect) {
 		this.vect=vect;
 	}
 	
