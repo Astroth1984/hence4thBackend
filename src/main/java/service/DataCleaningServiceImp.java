@@ -51,6 +51,8 @@ public class DataCleaningServiceImp implements DataCleaningService {
 		Optional<Comments> comments = Optional.ofNullable(commentRepository.findById(commentDto.getId()));
         if (comments.isPresent()) {
             Comments commentsModel = comments.get();
+            CountVectorizerCalculator calculator =new CountVectorizerCalculator(commentsModel.getComment(),commentDto.comment);
+            
         }    
 		
 		
