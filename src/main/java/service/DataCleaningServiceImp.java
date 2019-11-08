@@ -40,12 +40,8 @@ public class DataCleaningServiceImp implements DataCleaningService {
 	            
 	            return CommentMapper.toCommentDto(commentRepository.save(commentsModel));
 	            
-	            
-	            
-	            
+	                 
 	        }    
-		
-		
 		
 		
 	}
