@@ -142,6 +142,93 @@
 		    <artifactId>emoji-java</artifactId>
 		    <version>4.0.0</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.bytedeco</groupId>
+		    <artifactId>numpy</artifactId>
+		    <version>1.17.3-1.5.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>databricks</groupId>
+		    <artifactId>spark-sklearn</artifactId>
+		    <version>0.2.0</version>
+		</dependency>
+		
+		
+		
+		<dependency>
+		    <groupId>org.jpmml</groupId>
+		    <artifactId>pmml-model</artifactId>
+		    <version>1.0.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.72</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jpmml</groupId>
+			<artifactId>jpmml-converter</artifactId>
+			<version>1.3.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jpmml</groupId>
+			<artifactId>jpmml-h2o</artifactId>
+			<version>1.0.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jpmml</groupId>
+			<artifactId>jpmml-lightgbm</artifactId>
+			<version>1.2.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jpmml</groupId>
+			<artifactId>jpmml-xgboost</artifactId>
+			<version>1.3.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.razorvine</groupId>
+			<artifactId>pyrolite</artifactId>
+			<version>4.30</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jpmml</groupId>
+			<artifactId>pmml-evaluator</artifactId>
+			<version>1.4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jpmml</groupId>
+			<artifactId>pmml-evaluator-test</artifactId>
+			<version>1.4.11</version>
+			<scope>test</scope>
+		</dependency>	
         
        
 
