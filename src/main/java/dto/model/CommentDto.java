@@ -30,11 +30,17 @@ public class CommentDto {
     public Language lang;
     
     
-    public int[] vect;
+    public double vect;
 
 
 	public String getId() {
 		 return id;
+	}
+
+
+	public String getComment() {
+		// TODO Auto-generated method stub
+		return comment;
 	}
 
 
