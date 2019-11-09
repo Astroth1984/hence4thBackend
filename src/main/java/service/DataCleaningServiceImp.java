@@ -53,6 +53,7 @@ public class DataCleaningServiceImp implements DataCleaningService {
             Comments commentsModel = comments.get();
             CountVectorizerCalculator calculator =new CountVectorizerCalculator(commentsModel.getComment(),commentDto.comment);
             
+            return CommentMapper.toCommentDto(commentRepository.save(commentsModel));
         }    
 		
 		
